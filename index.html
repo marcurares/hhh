@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <title>Together</title>
+    <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        font-family: 'Josefin Sans', sans-serif;
+        overflow: hidden;
+    }
+    section {
+        display: grid;
+        grid-template-columns: repeat(10, auto);
+    }
+    section div {
+        background-color: white;
+         height: 100vh;
+         transition: background-color 1s;
+    }
+    h1 {
+        font-size: 5vh;
+        position: absolute;
+        top: 40%;s
+        left: 12%;
+        opacity: 0;
+        margin-right: 20px;
+
+    }
+    h2 {
+        margin-right: 20px;
+        font-size: 5vh;
+        position: absolute;
+        top: 40%;s
+        left: 12%;
+        opacity: 0;
+       
+
+    }
+    h3 {
+      
+        font-size: 5vh;
+        position: absolute;
+        top: 40%;s
+        left: 50%;
+        opacity: 0;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+      
+    <h1> Don't give up on hope :) </h1>
+    <h2>Starting from today, things will change. You'll see!</h2>
+    <h3>See you home!</h3>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script>
+             let grids = document.querySelectorAll('div');
+
+             let num = 0;
+
+             const delay = time => new Promise(resolve => setTimeout(resolve, time));
+               
+               var h1 = document.querySelector('h1');
+
+               var h2 = document.querySelector('h2');
+
+              var body = document.querySelector('body');
+
+              var h3 = document.querySelector('h3');
+
+              grids.forEach(grid => {
+                  delay(0).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = 'lightblue' ;
+                  }, num += 100); 
+                })
+                delay(500).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = 'rgb(228, 242, 255)' ;
+                  grid.style.width = '98%' ;
+                  h1.style.opacity = '100' ;
+                 
+                  }, num += 100); 
+                })
+                delay(1000).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = 'lightblue' ;
+                  grid.style.width = '100%' ;
+                 
+                  }, num += 100); 
+                })
+                delay(1500).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#7FE9DD' ;
+                  grid.style.width = '90%' ;
+                  h1.style.opacity = '0' ;
+                 
+                  }, num += 100); 
+                })
+                delay(2000).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#BA77DC' ;
+                  grid.style.width = '100%' ;
+                 
+                 
+                  }, num += 100); 
+                })
+                delay(2500).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#DA72CD' ;
+                  grid.style.width = '100%' ;
+    
+                  }, num += 100); 
+                })
+                delay(3000).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#9D72DA' ;
+                  grid.style.width = '90%' ;
+                  h2.style.opacity = '100' ;
+                  grid.style.border = "2px solid white" ;
+                  grid.style.borderRadius = "50px" ;
+    
+                  }, num += 100); 
+                })
+
+                delay(3200).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#9D72DA' ;
+                  grid.style.width = '95%' ;
+                 
+                  grid.style.borderRadius = "100px" ;
+    
+                  }, num += 100); 
+                })
+
+                
+                delay(3700).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#9D72DA' ;
+                  grid.style.width = '90%' ;
+                 
+                  grid.style.borderRadius = "120px" ;
+    
+                  }, num += 100); 
+                })
+                delay(4000).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#3DABEB' ;
+                  grid.style.width = '90%' ;
+                 
+                  grid.style.borderRadius = "120px" ;
+    
+                  }, num += 100); 
+                })
+
+                delay(4500).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#3DEBE8' ;
+                  grid.style.width = '100%' ;
+                  grid.style.border = "" ;
+                  grid.style.borderRadius = "150px" 
+    
+                  }, num += 100); 
+                })
+
+                delay(4800).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#3DEBBF' ;
+                  grid.style.width = '100%' ;
+                  grid.style.border = "" ;
+                  grid.style.borderRadius = "170px" 
+    
+                  }, num += 100); 
+                })
+
+                delay(4800).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#3DEB7D' ;
+                  grid.style.width = '90%' ;
+                  
+                  grid.style.borderRadius = "10px" 
+    
+                  }, num += 100); 
+                })
+
+                delay(5000).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#4BEB3D' ;
+                  grid.style.width = '100%' ;
+                  
+                  grid.style.borderRadius = "0" 
+    
+                  }, num += 100); 
+                })
+
+                delay(5500).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#90EB3D' ;
+                  grid.style.width = '100%' ;
+                  grid.style.height = '60%' ;
+                  grid.style.borderRadius = "50px" ;
+                  body.style.backgroundColor = '#D3ED8B' 
+    
+                  }, num += 100); 
+                })
+
+                delay(6000).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#60D56F' ;
+                  grid.style.width = '90%' ;
+                  grid.style.height = '80%' ;
+                  grid.style.borderRadius = "50px" ;
+                  body.style.backgroundColor = 'white' 
+    
+                  }, num += 100); 
+                })
+
+ 
+                delay(6500).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = '#5EED70' ;
+                  grid.style.width = '100%' ;
+                  grid.style.height = '100%' ;
+                  grid.style.borderRadius = "0" ;
+                  body.style.backgroundColor = 'black' 
+    
+                  }, num += 100); 
+                })
+
+                delay(7500).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = 'lightblue' ;
+                  grid.style.width = '100%' ;
+                  grid.style.height = '100%' ;
+                  grid.style.borderRadius = "0" ;
+                  body.style.backgroundColor = 'black' 
+    
+                  }, num += 100); 
+                })
+
+                delay(8000).then(() => {
+                  setTimeout(() => {
+                  grid.style.backgroundColor = 'lightblue' ;
+                  grid.style.width = '100%' ;
+                  grid.style.height = '100%' ;
+                  grid.style.borderRadius = "0" ;
+                  body.style.backgroundColor = 'black' 
+                  h3.style.opacity = '100'
+    
+                  }, num += 100); 
+                })
+
+              })
+
+
+
+
+
+    </script>
+</body>
+</html>
